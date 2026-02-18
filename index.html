@@ -1,0 +1,1590 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile Repair Shop in Bangalore</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon.png"
+    />
+    <link rel="apple-touch-icon" href="./images/favicon.png" />
+
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap JS Bundle (Required for Modal) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="images/logo.png" alt="Logo" class="logo-img" />
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button
+          class="navbar-toggler border-0 shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu -->
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarContent"
+        >
+          <!-- Center Menu -->
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Our Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#repair-areas">Repair Areas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reviews">Testimonial</a>
+            </li>
+          </ul>
+
+          <!-- Right Side -->
+          <div class="d-flex align-items-center gap-3 nav-right">
+            <a href="tel:+919972535995" class="nav-phone">
+              <i class="bi bi-telephone"></i> +91 9972535995
+            </a>
+
+            <a href="#" class="enquire-btn"> Enquire Now </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero-section" id="home">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- LEFT SIDE -->
+          <div class="col-lg-7 text-white mb-5 mb-lg-0">
+            <span class="trusted-badge">
+              <i class="bi bi-check-circle-fill"></i> Trusted by 2,000+
+              Customers
+            </span>
+
+            <h1 class="hero-title mt-4">
+              Mobile Repair Shop in Bangalore –
+              <span>Best Mobile Repair Shop in Bangalore</span>
+            </h1>
+
+            <p class="hero-sub">
+              Fast, Affordable & Authorized Mobile Repair Services Across
+              <strong>SP Road, Marathahalli, Koramangala & BTM Layout.</strong>
+            </p>
+
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <a href="tel:+91 9972535995" class="btn btn-call blink">
+                <i class="bi bi-telephone-fill"></i> Call Now
+              </a>
+
+              <a
+                href="https://wa.me/919972535995"
+                target="_blank"
+                class="btn btn-whatsapp"
+              >
+                <i class="bi bi-whatsapp"></i> Enquire Now
+              </a>
+
+              <a href="#enquiry" class="btn btn-outline-light px-4">
+                Enquire Now
+              </a>
+            </div>
+
+            <div class="rating mt-4">
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <span>4.9/5 from 2,000+ Google Reviews</span>
+            </div>
+          </div>
+
+          <!-- RIGHT FORM -->
+          <div class="col-lg-5">
+            <div class="enquiry-card" id="enquiry">
+              <div class="enquiry-header">
+                <div class="icon-circle">
+                  <i class="bi bi-send-fill"></i>
+                </div>
+                <div>
+                  <h5>Quick Inquiry</h5>
+                  <small>Usually replies within minutes</small>
+                </div>
+              </div>
+
+              <hr />
+
+              <form action="./send-inquiry.php" method="POST">
+                <div class="form-group mb-3">
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-control"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+
+                <div class="form-group mb-3">
+                  <input
+                    type="tel"
+                    name="phone"
+                    class="form-control"
+                    placeholder="Mobile Number"
+                    pattern="[0-9]{10}"
+                    maxlength="10"
+                    required
+                  />
+                </div>
+
+                <div class="form-group mb-3">
+                  <select name="device" class="form-select" required>
+                    <option value="" disabled selected>Select Device</option>
+                    <option>Samsung</option>
+                    <option>Apple</option>
+                    <option>OnePlus</option>
+                    <option>Motorola</option>
+                    <option>Xiaomi</option>
+                    <option>Realme</option>
+                    <option>Poco</option>
+                    <option>Vivo</option>
+                    <option>Google Pixel</option>
+                    <option>Oppo</option>
+                    <option>Others</option>
+                  </select>
+                </div>
+
+                <div class="form-group mb-3">
+                  <select name="issue" class="form-select" required>
+                    <option value="" disabled selected>Select Issue</option>
+                    <option>Screen / Display</option>
+                    <option>Back Panel / Back Glass Broken</option>
+                    <option>Battery Issue</option>
+                    <option>Charging Port</option>
+                    <option>Ear Piece</option>
+                    <option>Front Camera</option>
+                    <option>Back Camera</option>
+                    <option>Fingerprint</option>
+                    <option>Speaker</option>
+                    <option>Microphone</option>
+                    <option>Center Housing</option>
+                    <option>Other Issue</option>
+                  </select>
+                </div>
+
+                <!-- Honeypot Anti-Spam -->
+                <input type="text" name="website" style="display: none" />
+
+                <button type="submit" class="btn btn-success w-100">
+                  Submit Inquiry
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about SECTION -->
+    <!-- ABOUT SECTION (WHITE VERSION) -->
+    <section class="repair-info-section-white" id="about">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="repair-title">
+            Repair Services For Your <span>Mobile's</span>
+          </h2>
+        </div>
+
+        <div class="row align-items-center g-5">
+          <!-- LEFT IMAGE -->
+          <div class="col-lg-6">
+            <div class="repair-image-wrapper">
+              <img
+                src="./images/about_img.jpg"
+                alt="Mobile Repair"
+                class="img-fluid repair-image"
+              />
+            </div>
+          </div>
+
+          <!-- RIGHT CONTENT -->
+          <div class="col-lg-6">
+            <div class="repair-content">
+              <p>
+                Our phone repair center is open all days from
+                <strong>9:00am to 9:30pm</strong>. We have been repairing
+                smartphones since 2011. We repair most mobile brands and models
+                including Apple iPhone, Samsung Galaxy, LG, Huawei, Sony, Nokia
+                and Motorola.
+              </p>
+
+              <p>
+                We are one of the leading Smart Phone Repair and Service Centers
+                in Bangalore providing quality doorstep repair and replacement
+                services for all major brands.
+              </p>
+
+              <a
+                href="https://wa.me/919972535995"
+                target="_blank"
+                class="btn repair-btn mt-3"
+              >
+                <i class="bi bi-whatsapp"></i> Enquire Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BRAND SERVICES SECTION -->
+    <section class="services-section" id="services">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="service-title">Our <span>Services</span></h2>
+        </div>
+
+        <div class="row g-4">
+          <!-- CARD -->
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="service-img-wrapper">
+                <img
+                  src="./images/services/pro1.jpg"
+                  alt="Realme Repair"
+                  class="img-fluid"
+                />
+              </div>
+
+              <h6>Realme Repair Service</h6>
+
+              <div class="service-actions">
+                <a
+                  href="https://wa.me/919972535995"
+                  target="_blank"
+                  class="wa-btn"
+                >
+                  <i class="bi bi-whatsapp"></i> WhatsApp
+                </a>
+
+                <a
+                  href=""
+                  data-bs-toggle="modal"
+                  data-bs-target="#enquiryModal"
+                  class="enquiry-btn"
+                >
+                  <i class="bi bi-envelope-fill"></i> Enquiry
+                </a>
+
+                <a href="tel:+919972535995" class="call-btn">
+                  <i class="bi bi-telephone-fill"></i> Call Now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Duplicate Below Cards -->
+
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="service-img-wrapper">
+                <img
+                  src="./images/services/pro2.jpg"
+                  alt="Oppo Repair"
+                  class="img-fluid"
+                />
+              </div>
+              <h6>Oppo Repair Service</h6>
+              <div class="service-actions">
+                <a
+                  href="https://wa.me/919972535995"
+                  target="_blank"
+                  class="wa-btn"
+                >
+                  <i class="bi bi-whatsapp"></i> WhatsApp
+                </a>
+
+                <a
+                  href=""
+                  data-bs-toggle="modal"
+                  data-bs-target="#enquiryModal"
+                  class="enquiry-btn"
+                >
+                  <i class="bi bi-envelope-fill"></i> Enquiry
+                </a>
+
+                <a href="tel:+919972535995" class="call-btn">
+                  <i class="bi bi-telephone-fill"></i> Call Now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="service-img-wrapper">
+                <img
+                  src="./images/services/pro3.jpg"
+                  alt="Vivo Repair"
+                  class="img-fluid"
+                />
+              </div>
+              <h6>Vivo Repair Service</h6>
+              <div class="service-actions">
+                <a
+                  href="https://wa.me/919972535995"
+                  target="_blank"
+                  class="wa-btn"
+                >
+                  <i class="bi bi-whatsapp"></i> WhatsApp
+                </a>
+
+                <a
+                  href=""
+                  data-bs-toggle="modal"
+                  data-bs-target="#enquiryModal"
+                  class="enquiry-btn"
+                >
+                  <i class="bi bi-envelope-fill"></i> Enquiry
+                </a>
+
+                <a href="tel:+919972535995" class="call-btn">
+                  <i class="bi bi-telephone-fill"></i> Call Now
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="service-img-wrapper">
+                <img
+                  src="./images/services/pro4.jpg"
+                  alt="Vivo Repair"
+                  class="img-fluid"
+                />
+              </div>
+              <h6>Xiaomi Repair Service</h6>
+              <div class="service-actions">
+                <a
+                  href="https://wa.me/919972535995"
+                  target="_blank"
+                  class="wa-btn"
+                >
+                  <i class="bi bi-whatsapp"></i> WhatsApp
+                </a>
+
+                <a
+                  href=""
+                  data-bs-toggle="modal"
+                  data-bs-target="#enquiryModal"
+                  class="enquiry-btn"
+                >
+                  <i class="bi bi-envelope-fill"></i> Enquiry
+                </a>
+
+                <a href="tel:+919972535995" class="call-btn">
+                  <i class="bi bi-telephone-fill"></i> Call Now
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="service-img-wrapper">
+                <img
+                  src="./images/services/pro5.jpg"
+                  alt="Vivo Repair"
+                  class="img-fluid"
+                />
+              </div>
+              <h6>OnePlus Repair Service</h6>
+              <div class="service-actions">
+                <a
+                  href="https://wa.me/919972535995"
+                  target="_blank"
+                  class="wa-btn"
+                >
+                  <i class="bi bi-whatsapp"></i> WhatsApp
+                </a>
+
+                <a
+                  href=""
+                  data-bs-toggle="modal"
+                  data-bs-target="#enquiryModal"
+                  class="enquiry-btn"
+                >
+                  <i class="bi bi-envelope-fill"></i> Enquiry
+                </a>
+
+                <a href="tel:+919972535995" class="call-btn">
+                  <i class="bi bi-telephone-fill"></i> Call Now
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="service-img-wrapper">
+                <img
+                  src="./images/services/pro6.jpg"
+                  alt="Vivo Repair"
+                  class="img-fluid"
+                />
+              </div>
+              <h6>Lenovo Repair Service</h6>
+              <div class="service-actions">
+                <a
+                  href="https://wa.me/919972535995"
+                  target="_blank"
+                  class="wa-btn"
+                >
+                  <i class="bi bi-whatsapp"></i> WhatsApp
+                </a>
+
+                <a
+                  href=""
+                  data-bs-toggle="modal"
+                  data-bs-target="#enquiryModal"
+                  class="enquiry-btn"
+                >
+                  <i class="bi bi-envelope-fill"></i> Enquiry
+                </a>
+
+                <a href="tel:+919972535995" class="call-btn">
+                  <i class="bi bi-telephone-fill"></i> Call Now
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="service-img-wrapper">
+                <img
+                  src="./images/services/pro7.jpg"
+                  alt="Vivo Repair"
+                  class="img-fluid"
+                />
+              </div>
+              <h6>Honor Repair Service</h6>
+              <div class="service-actions">
+                <a
+                  href="https://wa.me/919972535995"
+                  target="_blank"
+                  class="wa-btn"
+                >
+                  <i class="bi bi-whatsapp"></i> WhatsApp
+                </a>
+
+                <a
+                  href=""
+                  data-bs-toggle="modal"
+                  data-bs-target="#enquiryModal"
+                  class="enquiry-btn"
+                >
+                  <i class="bi bi-envelope-fill"></i> Enquiry
+                </a>
+
+                <a href="tel:+919972535995" class="call-btn">
+                  <i class="bi bi-telephone-fill"></i> Call Now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="service-img-wrapper">
+                <img
+                  src="./images/services/pro8.jpg"
+                  alt="Vivo Repair"
+                  class="img-fluid"
+                />
+              </div>
+              <h6>I Phone Repair Service</h6>
+              <div class="service-actions">
+                <a
+                  href="https://wa.me/919972535995"
+                  target="_blank"
+                  class="wa-btn"
+                >
+                  <i class="bi bi-whatsapp"></i> WhatsApp
+                </a>
+
+                <a
+                  href=""
+                  data-bs-toggle="modal"
+                  data-bs-target="#enquiryModal"
+                  class="enquiry-btn"
+                >
+                  <i class="bi bi-envelope-fill"></i> Enquiry
+                </a>
+
+                <a href="tel:+919972535995" class="call-btn">
+                  <i class="bi bi-telephone-fill"></i> Call Now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="service-img-wrapper">
+                <img
+                  src="./images/services/pro9.jpg"
+                  alt="Vivo Repair"
+                  class="img-fluid"
+                />
+              </div>
+              <h6>Samsung Repair Service</h6>
+              <div class="service-actions">
+                <a
+                  href="https://wa.me/919972535995"
+                  target="_blank"
+                  class="wa-btn"
+                >
+                  <i class="bi bi-whatsapp"></i> WhatsApp
+                </a>
+
+                <a
+                  href=""
+                  data-bs-toggle="modal"
+                  data-bs-target="#enquiryModal"
+                  class="enquiry-btn"
+                >
+                  <i class="bi bi-envelope-fill"></i> Enquiry
+                </a>
+
+                <a href="tel:+919972535995" class="call-btn">
+                  <i class="bi bi-telephone-fill"></i> Call Now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add more brands same structure -->
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST SECTION -->
+    <section class="trust-section">
+      <div class="container">
+        <div class="row justify-content-center text-center gy-4">
+          <!-- ITEM 1 -->
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="trust-item">
+              <div class="trust-circle">
+                <i class="bi bi-award"></i>
+              </div>
+              <h6>25+ Years</h6>
+              <p>Experience</p>
+            </div>
+          </div>
+
+          <!-- ITEM 2 -->
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="trust-item">
+              <div class="trust-circle">
+                <i class="bi bi-wrench"></i>
+              </div>
+              <h6>Authorized</h6>
+              <p>Service Center</p>
+            </div>
+          </div>
+
+          <!-- ITEM 3 -->
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="trust-item">
+              <div class="trust-circle">
+                <i class="bi bi-star"></i>
+              </div>
+              <h6>4.9 Rating</h6>
+              <p>Google Reviews</p>
+            </div>
+          </div>
+
+          <!-- ITEM 4 -->
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="trust-item">
+              <div class="trust-circle">
+                <i class="bi bi-lightning-charge"></i>
+              </div>
+              <h6>Same Day</h6>
+              <p>Repair</p>
+            </div>
+          </div>
+
+          <!-- ITEM 5 -->
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="trust-item">
+              <div class="trust-circle">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <h6>Genuine</h6>
+              <p>Spare Parts</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SERVICES SECTION -->
+    <section class="services-section" id="repair-areas">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title text-white">
+            Best Mobile Repair Shop Bangalore –
+            <span>Repair Areas</span>
+          </h2>
+          <p class="section-sub">
+            Professional repair services for all major smartphone brands with
+            genuine spare parts and warranty support.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- 1 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="service-card">
+              <img
+                src="./images/Repair/s1.jpg"
+                alt="Broken Display Replacement"
+              />
+              <h6 class="mt-2 text-dark">Broken Display Replacement</h6>
+              <p>
+                Cracked or touch not working? We replace damaged screens with
+                genuine high-quality displays.
+              </p>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal">
+                <i class="bi bi-whatsapp"></i> Enquire Now
+              </a>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="service-card">
+              <img src="./images/Repair/s2.jpg" alt="Water Damage Repair" />
+              <h6 class="mt-2 text-dark">Water Damage Repair</h6>
+              <p>
+                Phone exposed to water? We use advanced drying and motherboard
+                cleaning technology.
+              </p>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal">
+                <i class="bi bi-whatsapp"></i> Enquire Now
+              </a>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="service-card">
+              <img src="./images/Repair/s3.jpg" alt="Battery Replacement" />
+              <h6 class="mt-2 text-dark">Battery Replacement</h6>
+              <p>
+                Battery draining fast? Get original battery replacement with
+                warranty.
+              </p>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal">
+                <i class="bi bi-whatsapp"></i> Enquire Now
+              </a>
+            </div>
+          </div>
+
+          <!-- 4 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="service-card">
+              <img src="./images/Repair/s4.jpg" alt="Camera Replacement" />
+              <h6 class="mt-2 text-dark">Camera Replacement / Repair</h6>
+              <p>
+                Blurry or not opening camera? We repair or replace front and
+                back camera modules.
+              </p>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal">
+                <i class="bi bi-whatsapp"></i> Enquire Now
+              </a>
+            </div>
+          </div>
+
+          <!-- 5 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="service-card">
+              <img src="./images/Repair/s5.jpg" alt="Motherboard Repair" />
+              <h6 class="mt-2 text-dark">Motherboard Repair & Replacement</h6>
+              <p>
+                Dead phone or no power issue? Expert chip-level motherboard
+                repair solutions.
+              </p>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal">
+                <i class="bi bi-whatsapp"></i> Enquire Now
+              </a>
+            </div>
+          </div>
+
+          <!-- 6 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="service-card">
+              <img src="./images/Repair/s6.jpg" alt="Back Panel Replacement" />
+              <h6 class="mt-2 text-dark">Back Panel Replacement</h6>
+              <p>
+                Broken or scratched back glass? We provide premium back panel
+                replacement.
+              </p>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal">
+                <i class="bi bi-whatsapp"></i> Enquire Now
+              </a>
+            </div>
+          </div>
+
+          <!-- 7 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="service-card">
+              <img src="./images/Repair/s7.jpg" alt="Data Backup & Recovery" />
+              <h6 class="mt-2 text-dark">Data Backup & Recovery</h6>
+              <p>
+                Lost important data? We recover photos, contacts, and files
+                safely.
+              </p>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal">
+                <i class="bi bi-whatsapp"></i> Enquire Now
+              </a>
+            </div>
+          </div>
+
+          <!-- 8 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="service-card">
+              <img src="./images/Repair/s8.jpg" alt="Power Button Repair" />
+              <h6 class="mt-2 text-dark">Power Button Repair</h6>
+              <p>
+                Power button not responding? We fix or replace faulty buttons
+                quickly.
+              </p>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal">
+                <i class="bi bi-whatsapp"></i> Enquire Now
+              </a>
+            </div>
+          </div>
+
+          <!-- 9 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="service-card">
+              <img src="./images/Repair/s9.jpg" alt="Charging Port Repair" />
+              <h6 class="mt-2 text-dark">Charging Port Repair</h6>
+              <p>
+                Phone not charging? We repair or replace damaged charging
+                connectors.
+              </p>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal">
+                <i class="bi bi-whatsapp"></i> Enquire Now
+              </a>
+            </div>
+          </div>
+
+          <!-- 10 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="service-card">
+              <img src="./images/Repair/s10.jpg" alt="Software Updates" />
+              <h6 class="mt-2 text-dark">Software Updates & Flashing</h6>
+              <p>
+                System errors or slow performance? We install official updates
+                and firmware.
+              </p>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal">
+                <i class="bi bi-whatsapp"></i> Enquire Now
+              </a>
+            </div>
+          </div>
+
+          <!-- 11 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="service-card">
+              <img src="./images/Repair/s11.jpg" alt="Logo Stuck Repair" />
+              <h6 class="mt-2 text-dark">Logo Stuck Repair</h6>
+              <p>
+                Phone stuck on logo screen? We fix boot loop and startup issues.
+              </p>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal">
+                <i class="bi bi-whatsapp"></i> Enquire Now
+              </a>
+            </div>
+          </div>
+
+          <!-- 12 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="service-card">
+              <img src="./images/Repair/s12.jpg" alt="Restart Problem Repair" />
+              <h6 class="mt-2 text-dark">Restart Problem Repair</h6>
+              <p>
+                Phone restarting automatically? We diagnose and fix hardware or
+                software faults.
+              </p>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal">
+                <i class="bi bi-whatsapp"></i> Enquire Now
+              </a>
+            </div>
+          </div>
+
+          <!-- 13 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="service-card">
+              <img
+                src="./images/Repair/s13.jpg"
+                alt="Speaker & Mic Replacement"
+              />
+              <h6 class="mt-2 text-dark">Speaker / Mic / Buzzer Repair</h6>
+              <p>
+                No sound or voice issue? We replace speaker, mic and ear speaker
+                components.
+              </p>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal">
+                <i class="bi bi-whatsapp"></i> Enquire Now
+              </a>
+            </div>
+          </div>
+
+          <!-- 14 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="service-card">
+              <img
+                src="./images/Repair/s14.jpg"
+                alt="Damage Screen Replacement"
+              />
+              <h6 class="mt-2 text-dark">Damaged Screen Replacement</h6>
+              <p>
+                Severely damaged display? Complete screen assembly replacement
+                available.
+              </p>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal">
+                <i class="bi bi-whatsapp"></i> Enquire Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US SECTION -->
+    <section class="why-choose-section" id="why-us">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="why-title">Why <span>Choose Us</span></h2>
+          <p class="why-subtitle">
+            Here's what makes us the best mobile repair shop in Bangalore.
+          </p>
+        </div>
+
+        <div class="row text-center g-5">
+          <!-- ITEM 1 -->
+          <div class="col-md-4">
+            <div class="why-box">
+              <div class="why-icon">
+                <i class="bi bi-people"></i>
+              </div>
+              <h5>Expert Engineers</h5>
+              <p>Certified technicians with years of hands-on experience.</p>
+            </div>
+          </div>
+
+          <!-- ITEM 2 -->
+          <div class="col-md-4">
+            <div class="why-box">
+              <div class="why-icon">
+                <i class="bi bi-clock"></i>
+              </div>
+              <h5>On Time Delivery</h5>
+              <p>Most repairs completed within same day.</p>
+            </div>
+          </div>
+
+          <!-- ITEM 3 -->
+          <div class="col-md-4">
+            <div class="why-box">
+              <div class="why-icon">
+                <i class="bi bi-cpu"></i>
+              </div>
+              <h5>Best Technology</h5>
+              <p>Advanced tools and diagnostic equipment.</p>
+            </div>
+          </div>
+
+          <!-- ITEM 4 -->
+          <div class="col-md-4">
+            <div class="why-box">
+              <div class="why-icon">
+                <i class="bi bi-award"></i>
+              </div>
+              <h5>25 Years Experience</h5>
+              <p>Trusted by Bangalore since 2001.</p>
+            </div>
+          </div>
+
+          <!-- ITEM 5 -->
+          <div class="col-md-4">
+            <div class="why-box">
+              <div class="why-icon">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <h5>Genuine Spare Parts</h5>
+              <p>Only OEM and certified spare parts used.</p>
+            </div>
+          </div>
+
+          <!-- ITEM 6 -->
+          <div class="col-md-4">
+            <div class="why-box">
+              <div class="why-icon">
+                <i class="bi bi-heart-pulse"></i>
+              </div>
+              <h5>Free Diagnosis</h5>
+              <p>Get a free check-up before any repair.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCATIONS SECTION -->
+    <section class="locations-section" id="locations">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="locations-title">
+            <span>Our Locations</span> Across Bangalore
+          </h2>
+          <p class="locations-subtitle">
+            Mobile Spare Parts SP Road Bangalore & expert repair services at 4
+            convenient locations.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- CARD 1 -->
+          <div class="col-lg-6">
+            <div class="location-card">
+              <div class="location-icon">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <div class="location-content">
+                <h5>Best Mobile Repair Shop in SP Road Bangalore</h5>
+                <p>
+                  Our flagship store on SP Road offers the widest range of
+                  mobile spare parts and expert repair services. Located in the
+                  heart of Bangalore's electronics hub.
+                </p>
+                <a href="#" class="direction-link">
+                  <i class="bi bi-geo-alt"></i> Get Directions
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 2 -->
+          <div class="col-lg-6">
+            <div class="location-card">
+              <div class="location-icon">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <div class="location-content">
+                <h5>Mobile Repair Shop in Marathahalli</h5>
+                <p>
+                  Conveniently located in Marathahalli, our service center
+                  provides quick and reliable mobile repairs for residents and
+                  IT professionals.
+                </p>
+                <a href="#" class="direction-link">
+                  <i class="bi bi-geo-alt"></i> Get Directions
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 3 -->
+          <div class="col-lg-6">
+            <div class="location-card">
+              <div class="location-icon">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <div class="location-content">
+                <h5>Mobile Repair Shop in Koramangala</h5>
+                <p>
+                  Our Koramangala branch serves one of Bangalore's most vibrant
+                  neighborhoods with expert repair and genuine spare parts.
+                </p>
+                <a href="#" class="direction-link">
+                  <i class="bi bi-geo-alt"></i> Get Directions
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 4 -->
+          <div class="col-lg-6">
+            <div class="location-card">
+              <div class="location-icon">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <div class="location-content">
+                <h5>Mobile Repair Shop in BTM Layout</h5>
+                <p>
+                  Visit our BTM Layout center for affordable and trustworthy
+                  mobile repairs with guaranteed quality and fast turnaround.
+                </p>
+                <a href="#" class="direction-link">
+                  <i class="bi bi-geo-alt"></i> Get Directions
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHOOSE YOUR BRANDS -->
+    <section class="brands-section">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="brands-title">Choose Your <span>Brands</span></h2>
+          <p class="brands-subtitle">
+            We repair all major smartphone brands with genuine spare parts.
+          </p>
+        </div>
+
+        <div class="swiper brandsSwiper">
+          <div class="swiper-wrapper">
+            <!-- BRAND ITEM -->
+            <div class="swiper-slide">
+              <div class="brand-card">
+                <img src="./images/Brands/1.jpg" alt="Apple" />
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="brand-card">
+                <img src="./images/Brands/2.jpg" alt="Samsung" />
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="brand-card">
+                <img src="./images/Brands3.jpg" alt="Google" />
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="brand-card">
+                <img src="images/mi.jpg" alt="Mi" />
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="brand-card">
+                <img src="./images/Brands/4.jpg" alt="OnePlus" />
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="brand-card">
+                <img src="./images/Brands/5.jpg" alt="Motorola" />
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="brand-card">
+                <img src="./images/Brands/6.jpg" alt="iQOO" />
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="brand-card">
+                <img src="./images/Brands/7.jpg" alt="Nothing" />
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="brand-card">
+                <img src="./images/Brands/8.jpg" alt="Vivo" />
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="brand-card">
+                <img src="./images/Brands/9.jpg" alt="Oppo" />
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="brand-card">
+                <img src="./images/Brands/10.jpg" alt="Realme" />
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="brand-card">
+                <img src="./images/Brands/11.jpg" alt="Poco" />
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="brand-card">
+                <img src="./images/Brands/12.jpg" alt="Tecno" />
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="brand-card">
+                <img src="./images/Brands/13.jpg" alt="Nokia" />
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="brand-card">
+                <img src="./images/Brands/14.jpg" alt="Honor" />
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="brand-card">
+                <img src="./images/Brands/15.jpg" alt="Asus" />
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="brand-card">
+                <img src="./images/Brands/16.jpg" alt="Huawei" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEW SECTION -->
+    <section class="review-light-section" id="reviews">
+      <div class="container text-center">
+        <h2 class="review-light-title">What Our <span>Customers Say</span></h2>
+
+        <p class="review-light-sub">
+          Rated <strong>4.9/5</strong> by 2,000+ Customers
+        </p>
+
+        <div class="swiper reviewLightSwiper mt-5">
+          <div class="swiper-wrapper">
+            <!-- REVIEW 1 -->
+            <div class="swiper-slide">
+              <div class="review-light-card">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-light-text">
+                  "Motherboard repair done perfectly! Other shops said my phone
+                  was dead but these guys fixed it in a day. Truly the best in
+                  Bangalore."
+                </p>
+
+                <div class="review-light-user">
+                  <div class="review-light-avatar">A</div>
+                  <span>Arjun Patel</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- REVIEW 2 -->
+            <div class="swiper-slide">
+              <div class="review-light-card">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-light-text">
+                  "Quick screen replacement and genuine spare parts. Very
+                  professional service and affordable pricing."
+                </p>
+
+                <div class="review-light-user">
+                  <div class="review-light-avatar">R</div>
+                  <span>Rohit Kumar</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- REVIEW 3 -->
+            <div class="swiper-slide">
+              <div class="review-light-card">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-light-text">
+                  "Free diagnosis and honest pricing. Highly recommended repair
+                  shop in SP Road."
+                </p>
+
+                <div class="review-light-user">
+                  <div class="review-light-avatar">S</div>
+                  <span>Sneha Reddy</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dots -->
+          <div class="swiper-pagination review-light-dots"></div>
+
+          <!-- Arrows -->
+          <div class="swiper-button-prev review-light-prev"></div>
+          <div class="swiper-button-next review-light-next"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA SECTION -->
+    <section class="final-cta-section">
+      <div class="container text-center">
+        <h2 class="final-cta-title">
+          Looking for the
+          <span>Best Mobile Repair Shop</span>
+          in Bangalore?
+        </h2>
+
+        <p class="final-cta-sub">
+          Get your device repaired by certified experts with genuine spare
+          parts. Same day service available at all our branches.
+        </p>
+
+        <div class="final-cta-buttons">
+          <a href="tel:+919972535995" class="cta-btn call-btn">
+            <i class="bi bi-telephone"></i> Call Now
+          </a>
+
+          <a
+            href="https://wa.me/919972535995"
+            target="_blank"
+            class="cta-btn whatsapp-btn"
+          >
+            <i class="bi bi-whatsapp"></i> WhatsApp Now
+          </a>
+
+          <a href="#" class="cta-btn branch-btn">
+            <i class="bi bi-geo-alt"></i> Visit SP Road Branch
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="main-footer">
+      <div class="container">
+        <div class="row g-5">
+          <!-- ABOUT -->
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-about">
+              <img src="images/logo.png" alt="Logo" class="footer-logo" />
+
+              <p>
+                We are Bangalore’s trusted mobile repair shop providing genuine
+                spare parts, expert technicians and same-day service across all
+                major locations.
+              </p>
+
+              <div class="footer-social">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-whatsapp"></i></a>
+                <a href="#"><i class="bi bi-google"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- QUICK LINKS -->
+          <div class="col-lg-2 col-md-6">
+            <h5 class="footer-title">Quick Links</h5>
+            <ul class="footer-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Services</a></li>
+              <li><a href="#">Repair Areas</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- SERVICES -->
+          <div class="col-lg-3 col-md-6">
+            <h5 class="footer-title">Our Services</h5>
+            <ul class="footer-links">
+              <li><a href="#">iPhone Repair</a></li>
+              <li><a href="#">Samsung Repair</a></li>
+              <li><a href="#">Screen Replacement</a></li>
+              <li><a href="#">Battery Replacement</a></li>
+              <li><a href="#">Water Damage Repair</a></li>
+              <li><a href="#">Software Issues</a></li>
+            </ul>
+          </div>
+
+          <!-- CONTACT -->
+          <div class="col-lg-3 col-md-6">
+            <h5 class="footer-title">Contact Info</h5>
+
+            <ul class="footer-contact">
+              <li>
+                <i class="bi bi-geo-alt"></i>
+                390, Akash Arcade Rajajinagar 1st Block Bangalore 560010
+              </li>
+              <li>
+                <i class="bi bi-telephone"></i>
+                <a href="tel:+91 9972535995"> +91 9972535995</a>
+              </li>
+              <li>
+                <i class="bi bi-envelope"></i>
+                <a href="mailto:info@example.com"
+                  >sancomsmartphonecare@gmail.com</a
+                >
+              </li>
+              <li>
+                <i class="bi bi-clock"></i>
+                9:00 AM – 9:30 PM (All Days)
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- BOTTOM BAR -->
+      <div class="footer-bottom">
+        <div class="container">
+          <p>© 2026 Mobile Repair Shop Bangalore. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- MODAL FORM -->
+    <div class="modal fade" id="enquiryModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content enquiry-modal">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">
+              <i class="bi bi-whatsapp text-success"></i> Quick Inquiry
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <form action="./send-inquiry.php" method="POST">
+              <div class="form-group mb-3">
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+
+              <div class="form-group mb-3">
+                <input
+                  type="tel"
+                  name="phone"
+                  class="form-control"
+                  placeholder="Mobile Number"
+                  pattern="[0-9]{10}"
+                  maxlength="10"
+                  required
+                />
+              </div>
+
+              <div class="form-group mb-3">
+                <select name="device" class="form-select" required>
+                  <option value="" disabled selected>Select Device</option>
+                  <option>Samsung</option>
+                  <option>Apple</option>
+                  <option>OnePlus</option>
+                  <option>Motorola</option>
+                  <option>Xiaomi</option>
+                  <option>Realme</option>
+                  <option>Poco</option>
+                  <option>Vivo</option>
+                  <option>Google Pixel</option>
+                  <option>Oppo</option>
+                  <option>Others</option>
+                </select>
+              </div>
+
+              <div class="form-group mb-3">
+                <select name="issue" class="form-select" required>
+                  <option value="" disabled selected>Select Issue</option>
+                  <option>Screen / Display</option>
+                  <option>Back Panel / Back Glass Broken</option>
+                  <option>Battery Issue</option>
+                  <option>Charging Port</option>
+                  <option>Ear Piece</option>
+                  <option>Front Camera</option>
+                  <option>Back Camera</option>
+                  <option>Fingerprint</option>
+                  <option>Speaker</option>
+                  <option>Microphone</option>
+                  <option>Center Housing</option>
+                  <option>Other Issue</option>
+                </select>
+              </div>
+
+              <!-- Honeypot Anti-Spam -->
+              <input type="text" name="website" style="display: none" />
+
+              <button type="submit" class="btn btn-success w-100">
+                Submit Inquiry
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ================= FLOATING BUTTONS ================= -->
+
+    <!-- WhatsApp Floating -->
+    <a
+      href="https://wa.me/919972535995"
+      target="_blank"
+      class="floating-whatsapp"
+    >
+      <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- Call Floating -->
+    <a href="tel:+919972535995" class="floating-call">
+      <i class="bi bi-telephone-fill"></i>
+    </a>
+
+    <!-- Scroll To Top -->
+    <button id="scrollTopBtn" class="scroll-top-btn">
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      /* ================= ACTIVE NAV ON SCROLL ================= */
+
+      const sections = document.querySelectorAll("section");
+      const navLinks = document.querySelectorAll(".nav-link");
+
+      window.addEventListener("scroll", () => {
+        let current = "";
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop - 120;
+          const sectionHeight = section.clientHeight;
+
+          if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+            current = section.getAttribute("id");
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === "#" + current) {
+            link.classList.add("active");
+          }
+        });
+      });
+
+      // brand swiper
+      var swiper = new Swiper(".brandsSwiper", {
+        slidesPerView: 5,
+        spaceBetween: 30,
+        loop: true,
+        speed: 4000,
+        autoplay: {
+          delay: 0,
+          disableOnInteraction: false,
+        },
+        freeMode: true,
+        freeModeMomentum: false,
+        breakpoints: {
+          0: { slidesPerView: 2 },
+          576: { slidesPerView: 3 },
+          768: { slidesPerView: 4 },
+          992: { slidesPerView: 5 },
+        },
+      });
+      //   review swiper
+      var swiper = new Swiper(".reviewLightSwiper", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        },
+        pagination: {
+          el: ".review-light-dots",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".review-light-next",
+          prevEl: ".review-light-prev",
+        },
+        breakpoints: {
+          0: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+        },
+      });
+      /* ================= SCROLL TO TOP ================= */
+
+      const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 300) {
+          scrollTopBtn.style.display = "flex";
+        } else {
+          scrollTopBtn.style.display = "none";
+        }
+      });
+
+      scrollTopBtn.addEventListener("click", function () {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+    </script>
+  </body>
+</html>
